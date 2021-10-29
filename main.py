@@ -32,7 +32,7 @@ will_rain = False
 
 for hour_data in weather_slice:
     condition_code = hour_data["weather"][0]["id"]
-    if int(condition_code) < 900: # https://openweathermap.org/weather-conditions
+    if int(condition_code) < 700: # https://openweathermap.org/weather-conditions
         will_rain = True
 
 
